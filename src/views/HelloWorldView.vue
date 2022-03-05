@@ -1,13 +1,19 @@
 <template>
   <div class="hello-world">
-    <h1>Hello World</h1>
+    <h1>{{ message }}</h1>
   </div>
 </template>
 
 <script lang="ts">
-import { Vue } from "vue-class-component";
+import { defineComponent } from "vue";
 
-export default class HelloWorld extends Vue {}
+export default defineComponent({
+  data() {
+    return {
+      message: "Hello Worlda",
+    };
+  },
+});
 </script>
 
 <style lang="scss">
